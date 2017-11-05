@@ -1,0 +1,206 @@
+extends include/_layout
+block vars
+  include include/_meta
+  - var key = "top"
+  - var page = pages[key]
+block css
+  link(rel='stylesheet', href='./css/index.css')
+block js
+  script(src="./js/index.js")
+block content
+  section#main
+    .inner.txC
+      img(src='./img/index/main_font.png' alt='RIZAP internship')
+      h2 「やったことない」はやる勇気だ。
+  section#sub-nav
+    ul.cfx.inner
+      li
+        a(href='#content01') 事業開発インターン
+          span
+            img(src='./img/index/arrow_bottom.png' alt='矢印')
+      li
+        a(href='#content02')
+          | メディアマーケティング
+          br
+          | インターン
+          span
+            img(src='./img/index/arrow_bottom.png' alt='矢印')
+      li
+        a(href='#content03')
+          | 事業再生（M&amp;A）
+          br
+          | インターン
+          span
+            img(src='./img/index/arrow_bottom.png' alt='矢印')
+  section#contents-wrap
+    .inner
+      article#content01.inner2
+        h3.txC 事業開発インターン
+        .inner3
+          h4
+            | 【優秀案は事業化も！？】何が新規事業をスケールさせるのか。
+            br
+            | 事業スオズオカンパニーに学ぶ、新規事業成功に必要なこと
+          p
+            | RIZAPグループは、わずか3年間で、無名の状態から100億円を売り上げる事業を生み出した、事業開発における実績のある企業。
+            br
+            | ほかにも、さまざまな事業を新規で立ち上げ、成長させてきました。同社がこれまで蓄えてきた事業開発ノウハウを、座学とワークで実践的に身につけられるプログラムです。
+            br
+            | しかも、「収益の可能性あり」と判断されたワークのアウトプットは、本当に事業化する可能性もあります・ぜひ、「次世代のヒットビジネスを生み出す」気持ちで挑戦してみてください。
+          h4 当日の流れ
+          ul.today-flow
+            li
+              span 1.
+              | 事業説明
+            li
+              span 2.
+              | ケーススタディ
+            li
+              span 3.
+              | 実践型
+              br
+              | グループワーク
+            li
+              span 4.
+              | 現場社員からの
+              br
+              | フィードバック
+            li
+              span 5.
+              | 質疑応答
+          h4 概要
+          .cfx
+            table.table-left.flL
+              tr
+                th 服装
+                td 自由
+              tr
+                th 持ち物
+                td 筆記用具
+              tr
+                th 対象年次
+                td 2018年卒業予定の学生
+            table.table-right.flL
+              tr
+                th 開催場所
+                td
+                  span.bold RIZAPグループ株式会社　20階　セミナールーム
+                  | 住所：東京都新宿区北新宿2-21-1　新宿フロントタワー
+                  br
+                  | 最寄駅：東京メトロ丸の内線「西新宿」駅／都営大江戸線「都庁前」駅
+                  br
+                  | アクセス：東京メトロ丸の内線「西新宿」駅（1番出口）から徒歩5分
+                  br
+                  span.tab3 都営大江戸線「都庁前」駅（A5出口）から徒歩10分
+          .btn
+            a.txC(href='#') このインターンシップにエントリー
+      article#content02.inner2
+        h3.txC メディアマーケティングインターン
+        .inner3
+          h4 基礎知識のインプットをもとにマーケティングプランを立案。最後に「答え合わせ」のフィードバックつき
+          p
+            | このインターンでは、「そもそもマーケティングとは何か？」という基礎をはじめ、大きな成功につながっている「RIZAPグループがもつ5つのこだわり」などを座学で学ぶことができます。
+            br
+            | そして学んだ内容をもとに、実践型グループワークでマーケティングプランをアウトプット。このワークの特徴として、立案したマーケティングプランへのフィードバックをもらえるだけでなく、『実際にRIZAPグループが行った内容』も知ることができます。「答えがないから難しい」といわれるマーケティングにおいて、課題に対する「答え合わせ」ができるため、実戦的なマーケティングスキルを身につけることができます。
+          h4 当日の流れ
+          ul.today-flow
+            li
+              span 1.
+              | 事業説明
+            li
+              span 2.
+              | ケーススタディ
+            li
+              span 3.
+              | 実践型
+              br
+              | グループワーク
+            li
+              span 4.
+              | 現場社員からの
+              br
+              | フィードバック
+            li
+              span 5.
+              | 質疑応答
+          h4 概要
+          .cfx
+            table.table-left.flL
+              tr
+                th 服装
+                td 自由
+              tr
+                th 持ち物
+                td 筆記用具
+              tr
+                th 対象年次
+                td 2018年卒業予定の学生
+            table.table-right.flL
+              tr
+                th 開催場所
+                td
+                  span.bold RIZAPグループ株式会社　20階　セミナールーム
+                  | 住所：東京都新宿区北新宿2-21-1　新宿フロントタワー
+                  br
+                  | 最寄駅：東京メトロ丸の内線「西新宿」駅／都営大江戸線「都庁前」駅
+                  br
+                  | アクセス：東京メトロ丸の内線「西新宿」駅（1番出口）から徒歩5分
+                  br
+                  span.tab3 都営大江戸線「都庁前」駅（A5出口）から徒歩10分
+          .btn
+            a.txC(href='#') このインターンシップにエントリー
+      article#content03.inner2
+        h3.txC 事業再生（M&amp;A）インターン
+        .inner3
+          h4 【非公開の企業秘密も開示！？】M&amp;Aと事業再生を「再生請負人」に学ぶ
+          p
+            | 経営やマネジメントに関わりたいと考える方にとって、事業改善を続け、収益を大きくするスキルは必須の能力です。このインターンは、実は数々の企業をM&amp;Aでグループ化しており、事業の収益を拡大させる「再生請負人」としても有名なRIZAPグループから、その手法を学ぶことができます。
+            br
+            | 最大の特徴は“企業秘密も使ったワーク”に挑戦できること。上場企業のM&amp;Aに関わるワークのため、インサイダー取引に抵触する内容は教えられませんが、それ以外は企業秘密も関係なく開示。非常にリアルな、現場と同じレベルでM&amp;Aワークを体験できるプログラムです。
+          h4 当日の流れ
+          ul.today-flow
+            li
+              span 1.
+              | 事業説明
+            li
+              span 2.
+              | ケーススタディ
+            li
+              span 3.
+              | 実践型
+              br
+              | グループワーク
+            li
+              span 4.
+              | 現場社員からの
+              br
+              | フィードバック
+            li
+              span 5.
+              | 質疑応答
+          h4 概要
+          .cfx
+            table.table-left.flL
+              tr
+                th 服装
+                td 自由
+              tr
+                th 持ち物
+                td 筆記用具
+              tr
+                th 対象年次
+                td 2018年卒業予定の学生
+            table.table-right.flL
+              tr
+                th 開催場所
+                td
+                  span.bold RIZAPグループ株式会社　20階　セミナールーム
+                  | 住所：東京都新宿区北新宿2-21-1　新宿フロントタワー
+                  br
+                  | 最寄駅：東京メトロ丸の内線「西新宿」駅／都営大江戸線「都庁前」駅
+                  br
+                  | アクセス：東京メトロ丸の内線「西新宿」駅（1番出口）から徒歩5分
+                  br
+                  span.tab3 都営大江戸線「都庁前」駅（A5出口）から徒歩10分
+          .btn
+            a.txC(href='#') このインターンシップにエントリー

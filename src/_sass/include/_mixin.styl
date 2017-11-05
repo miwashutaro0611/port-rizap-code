@@ -1,0 +1,133 @@
+arrow-back(back_color1,back_color2)
+  background back_color1
+  a
+    span
+      &:before
+        right 20px
+        border-right 20px solid back_color2
+        border-left 0 solid transparent
+      &:after
+        left 20px
+        border-right 0 solid transparent
+        border-left 20px solid back_color2
+
+content-wrap(margin-top,back-image,h4-line-color)
+  margin-top margin-top
+  h3
+    background back-image no-repeat center
+    background-size 100% auto
+    margin 0 0 30px
+    padding 12% 0
+    font-size 30px
+    color #fff
+    font-weight normal
+  .inner3
+    h4
+      margin 30px 0
+      font-size 18px
+      line-height 1.7
+      padding 0 0 0 15px
+      border-left 4px solid h4-line-color
+    p
+      font-size 14px
+      line-height 2
+      padding 0 0 50px
+    .today-flow
+      display table
+      width 100%
+      padding 0 0 50px
+      background url(../img/index/flow.png) no-repeat
+      background-size 100% auto
+      li
+        display table-cell
+        width 20%
+        font-size 14px
+        text-align center
+        height 120px
+        line-height 2
+        vertical-align middle
+        span
+          padding 0 10px 0 0
+    .cfx
+      margin 0 0 60px
+      table
+        font-size 12px
+        text-align left
+        &.table-left
+          margin 0 30px 0 0
+          tr
+            height 60px
+            &:last-child
+              border-bottom 1px solid #e0e0e0
+            th
+              vertical-align middle
+            td
+              width 250px
+        &.table-right
+          tr
+            height 180px
+            border-bottom 1px solid #e0e0e0
+            td
+              width 440px
+        tr
+          border-top 1px solid #e0e0e0
+          box-sizing border-box
+          th
+            width 120px
+            padding 15px 20px
+            background #f7f8fa
+            box-sizing border-box
+          td
+            padding 15px 20px
+            line-height 2
+            box-sizing border-box
+            .bold
+              display block
+              padding 0 0 20px
+    .btn
+      display table
+      width 480px
+      height 95px
+      margin 0 auto
+      background #221f1e
+      a
+        display table-cell
+        width 100%
+        hright 100%
+        color #fff
+        font-size 16px
+        font-weight bold
+        vertical-align middle
+  @media (max-width: 767px)
+    margin-top 0
+    h3
+      background-size auto 100%
+      padding 20% 0
+    .inner3
+      .today-flow
+        display block
+        width 40%
+        margin 0 auto
+        padding 0 0 20px
+        background none
+        li
+          display block
+          width 100%
+          height 80px
+      .cfx
+        table
+          width 95%
+          margin 0 auto
+          &.table-left
+            margin 0
+            tr
+              &:last-child
+                border-bottom 0
+          tr
+            th
+              width 25% !important
+            td
+              width 75% !important
+      .btn
+        width 80%
+        margin 0 auto 60px

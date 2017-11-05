@@ -1,0 +1,78 @@
+
+
+body
+  font-family 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif
+
+.cfx:after
+  content ""
+  display block
+  clear both
+
+.flL
+  float left
+
+.flR
+  float right
+
+.txL
+  text-align left
+
+.txC
+  text-align center
+
+.txR
+  text-align right
+
+.tab1
+  padding-left 20px
+
+.tab2
+  padding-left 40px
+
+.tab3
+  padding-left 60px
+
+.bold
+  font-weight bold
+
+.inner
+  width 100%
+  max-width inner-width
+  margin 0 auto
+
+.inner2
+  width 100%
+  max-width inner-width2
+  margin 0 auto
+
+.inner3
+  width 90%
+  max-width inner-width3
+  margin 0 auto
+
+ol.cfx li,ul.cfx li
+  float left
+
+ol
+  list-style none
+
+.pc-display
+  display block
+
+.sp-display,.sp-indisplay
+  display none
+
+@media (min-width: 767px)
+  .pc-block
+    display block
+  .pc-inblock
+    display inline
+@media (max-width: 767px)
+  .sp-block
+    display block
+  .pc-display,.pc-indisplay
+    display none
+  .sp-display
+    display block
+  .sp-indisplay
+    display inline-block
